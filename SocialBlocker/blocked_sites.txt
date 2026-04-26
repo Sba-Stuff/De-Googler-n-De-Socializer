@@ -1,0 +1,29 @@
+# Desocializer Block List
+# Add one domain per line (without http:// or www)
+# Lines starting with # are ignored
+
+# Social media
+facebook.com
+fb.com
+instagram.com
+twitter.com
+x.com
+linkedin.com
+tiktok.com
+snapchat.com
+pinterest.com
+reddit.com
+
+# Google services
+youtube.com
+youtu.be
+maps.google.com
+news.google.com
+
+# Other big tech
+messenger.com
+wechat.com
+telegram.org
+
+# Add more as needed
+# Example: mastodon.social (if you want to block distractions)

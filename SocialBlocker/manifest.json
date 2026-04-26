@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Desocializer - Site Blocker",
+  "version": "1.0",
+  "description": "Blocks social media and big-tech sites, suggests alternatives.",
+  "permissions": ["declarativeNetRequest", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [{
+    "resources": ["blocked.html", "blocked.js", "blocked_sites.txt"],
+    "matches": ["<all_urls>"]
+  }],
+  "action": {
+    "default_title": "Desocializer",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}

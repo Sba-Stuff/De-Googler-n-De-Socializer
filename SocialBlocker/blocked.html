@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desocializer - Site Blocked</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 2rem;
+      padding: 2.5rem;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .subhead {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 1rem;
+    }
+
+    .alternatives {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid #334155;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 30px -15px rgba(0,0,0,0.4);
+      border-color: #f97316;
+    }
+
+    .card h3 {
+      color: #facc15;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .card a {
+      display: inline-block;
+      background: #f97316;
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .card a:hover {
+      background: #ea580c;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #334155;
+      color: #e2e8f0;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer {
+      text-align: center;
+      color: #64748b;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+    }
+
+    .reset-note {
+      background: #0f172a;
+      padding: 0.75rem;
+      border-radius: 1rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>🚫 Desocializer</h1>
+  <div class="subhead">You've been redirected from a blocked social media or big-tech site</div>
+
+  <p style="text-align: center; color: #94a3b8; margin-bottom: 1rem;">
+    🌱 Reclaim your focus and privacy. Try these ethical, open alternatives:
+  </p>
+
+  <div class="alternatives" id="alternatives-list"></div>
+
+  <div class="reset-note">
+    ⚙️ To manage blocked sites, edit <code>blocked_sites.txt</code> in the extension folder and reload the extension.
+  </div>
+  <div class="footer">
+    Desocializer — helping you de-Google, de-facebook, de-twitter, de-linkedin.
+  </div>
+</div>
+<script src="blocked.js"></script>
+</body>
+</html>
